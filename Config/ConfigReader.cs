@@ -5,7 +5,7 @@ namespace SockPerf.Config
 {
     public class ConfigReader : IConfigReader
     {
-        public Task<Scenario> GetScenario(string name)
+        public Task<Scenario> GetScenario(string uri)
         {
             throw new System.NotImplementedException();
         }
@@ -13,7 +13,7 @@ namespace SockPerf.Config
 
     public interface IConfigReader
     {
-        Task<Scenario> GetScenario(string name);
+        Task<Scenario> GetScenario(string uri);
     }
 
     // ReSharper disable once ClassNeverInstantiated.Global
